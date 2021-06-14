@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>Profile card</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div class="card">
+		<div class="cover">
+			<img src="user.jpg" alt="">
+		</div>
+		<div class="content">
+			<h1>🇸‌🇭‌🇮‌🇻‌🇦‌🇲‌ 🇸‌🇭‌🇺‌🇰‌🇱‌🇦‌</h1>
+			<h5>2019pcecsshivam164@poornima.org</h5>
+			<div class="icons">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/shivam-shukla-4b870b1b3/"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<button class="button">Follow</button>>
+			
+			<div class="btns">				
+				<a href="#" class="leftBtn"><i class="fa fa-info"></i></a>
+				<a href="#" class="rightBtn"><i class="fa fa-bolt"></i></a>
+			</div>
+		</div>
+		<div class="left-card">
+			<div class="text">
+				<h2><font face = "Comic sans MS" >About Me</font><br /></h2>
+                <p>Hi! I'm Shivam Shukla from Poornima College of Engineering, <br><br>a student of 2nd year pursuing my B-Tech degree in computer science and engineering.</p>
+                <p>I am seeking a challenging career with an MNC.</p>
+			</div>
+		</div>
+
+		<div class="right-card">
+			<div class="text">
+				<h2><font face = "Comic sans MS" >My Skills</font><br /></h2>
+                <p2>I have working knowledge in programming languages like C, C++ and Python.<br><br>
+                I am intermediate in web development and want to head my career as a web developer.<br><br>
+            	I am a Freelencer & I do works in front-end design/development , MS Excel & Photo editing.</p>
+            </div>
+		</div>
+	</div>
+
+	<script>
+		const card = document.querySelector('.card');
+		const leftBtn = document.querySelector('.leftBtn');
+		const rightBtn = document.querySelector('.rightBtn');
+
+		leftBtn.addEventListener('click', () => {
+			card.classList.toggle('left');
+		});
+
+		rightBtn.addEventListener('click', () => {
+			card.classList.toggle('right');
+		});
+	</script>
+</body>
+</html>
